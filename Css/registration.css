@@ -1,0 +1,39 @@
+form{
+    background-color: transparent;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 30px;
+
+}
+
+legend{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea, input[type="number"], input[type="date"], input[type="datetime-local"], select {
+    width: 100%;    
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid #ccc;   
+}
+
+body{
+    background-image: url("../Images/backgroundImage4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,439 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Categories</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+
+    <!-- Bootstrap JS -->
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-light">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                PrimeHaven
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Categories</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="bg-white py-5 shadow-sm">
+
+        <div class="container text-center py-4">
+
+            <span class="badge bg-primary rounded-pill px-3 py-2 mb-3">
+                Explore Our Store
+            </span>
+
+            <h1 class="display-4 fw-bold">
+                Product Categories
+            </h1>
+
+            <p class="lead text-secondary mx-auto" style="max-width: 700px;">
+                Discover quality products across different categories.
+                Find everything you need in one convenient place.
+            </p>
+
+            <button class="btn btn-primary btn-lg px-4 mt-2">
+                Explore Products
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURED PRODUCT ================= -->
+    <section class="container py-5">
+
+        <div class="row align-items-center g-4">
+
+            <!-- Image -->
+            <div class="col-lg-6">
+
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+
+                    <img src="images/Car 3.avif"
+                         class="img-fluid"
+                         alt="Mercedes Benz">
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="col-lg-6">
+
+                <span class="badge bg-dark mb-3">
+                    Featured Category
+                </span>
+
+                <h2 class="fw-bold">
+                    Mercedes Benz
+                </h2>
+
+                <p class="text-secondary fs-5">
+                    Explore our collection of premium vehicles designed
+                    for comfort, performance and style.
+                </p>
+
+                <div class="d-flex gap-2">
+
+                    <button class="btn btn-dark px-4">
+                        Shop Now
+                    </button>
+
+                    <button class="btn btn-outline-dark px-4">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="container pb-5">
+
+        <div class="text-center mb-5">
+
+            <span class="badge bg-primary rounded-pill px-3 py-2 mb-2">
+                Browse
+            </span>
+
+            <h2 class="fw-bold">
+                Shop By Category
+            </h2>
+
+            <p class="text-secondary">
+                Choose a category and discover products you'll love.
+            </p>
+
+        </div>
+
+
+        <!-- Bootstrap Grid -->
+        <div class="row g-4">
+
+
+            <!-- TOYS -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                    <div class="card-body p-4">
+
+                        <div class="bg-warning-subtle rounded-3
+                                    d-flex align-items-center justify-content-center
+                                    mb-4"
+                             style="height: 120px;">
+
+                            <span class="display-4">
+                                🧸
+                            </span>
+
+                        </div>
+
+                        <h3 class="h4 fw-bold">
+                            Toys & Games
+                        </h3>
+
+                        <p class="text-secondary">
+                            Discover fun and exciting toys and games
+                            for children and families.
+                        </p>
+
+                        <button class="btn btn-outline-dark w-100">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ELECTRONICS -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                    <div class="card-body p-4">
+
+                        <div class="bg-primary-subtle rounded-3
+                                    d-flex align-items-center justify-content-center
+                                    mb-4"
+                             style="height: 120px;">
+
+                            <span class="display-4">
+                                💻
+                            </span>
+
+                        </div>
+
+                        <h3 class="h4 fw-bold">
+                            Electronics
+                        </h3>
+
+                        <p class="text-secondary">
+                            Find modern electronics, gadgets and
+                            accessories for everyday life.
+                        </p>
+
+                        <button class="btn btn-outline-primary w-100">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- KITCHEN -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                    <div class="card-body p-4">
+
+                        <div class="bg-success-subtle rounded-3
+                                    d-flex align-items-center justify-content-center
+                                    mb-4"
+                             style="height: 120px;">
+
+                            <span class="display-4">
+                                🍳
+                            </span>
+
+                        </div>
+
+                        <h3 class="h4 fw-bold">
+                            Kitchenware
+                        </h3>
+
+                        <p class="text-secondary">
+                            Upgrade your kitchen with practical,
+                            stylish and quality products.
+                        </p>
+
+                        <button class="btn btn-outline-success w-100">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FASHION -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                    <div class="card-body p-4">
+
+                        <div class="bg-danger-subtle rounded-3
+                                    d-flex align-items-center justify-content-center
+                                    mb-4"
+                             style="height: 120px;">
+
+                            <span class="display-4">
+                                👗
+                            </span>
+
+                        </div>
+
+                        <h3 class="h4 fw-bold">
+                            Fashion
+                        </h3>
+
+                        <p class="text-secondary">
+                            Shop stylish clothing, shoes and accessories
+                            for every occasion.
+                        </p>
+
+                        <button class="btn btn-outline-danger w-100">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HOME -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                    <div class="card-body p-4">
+
+                        <div class="bg-info-subtle rounded-3
+                                    d-flex align-items-center justify-content-center
+                                    mb-4"
+                             style="height: 120px;">
+
+                            <span class="display-4">
+                                🏠
+                            </span>
+
+                        </div>
+
+                        <h3 class="h4 fw-bold">
+                            Home & Living
+                        </h3>
+
+                        <p class="text-secondary">
+                            Make your home comfortable with beautiful
+                            and useful products.
+                        </p>
+
+                        <button class="btn btn-outline-info w-100">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BEAUTY -->
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                    <div class="card-body p-4">
+
+                        <div class="bg-secondary-subtle rounded-3
+                                    d-flex align-items-center justify-content-center
+                                    mb-4"
+                             style="height: 120px;">
+
+                            <span class="display-4">
+                                💄
+                            </span>
+
+                        </div>
+
+                        <h3 class="h4 fw-bold">
+                            Beauty & Personal Care
+                        </h3>
+
+                        <p class="text-secondary">
+                            Discover beauty and personal care products
+                            for your everyday routine.
+                        </p>
+
+                        <button class="btn btn-outline-secondary w-100">
+                            Shop Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CALL TO ACTION ================= -->
+    <section class="bg-dark text-white py-5">
+
+        <div class="container text-center py-4">
+
+            <h2 class="fw-bold">
+                Ready to start shopping?
+            </h2>
+
+            <p class="text-white-50">
+                Explore our products and find something perfect for you.
+            </p>
+
+            <button class="btn btn-light btn-lg px-5">
+                Browse Products
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-black text-white py-4">
+
+        <div class="container text-center">
+
+            <p class="mb-1 fw-bold">
+                PrimeHaven
+            </p>
+
+            <p class="text-white-50 mb-0">
+                © 2026 PrimeHaven. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```

@@ -1,0 +1,82 @@
+/* THIS IS HOW YOU WRITE A COMMENT FOR CSS*/
+#P1{
+    font-style:oblique;
+    font-size: 25px;
+    color: #0f0f0e;
+}
+
+.main{
+    color: #575703;
+    font-style:inherit;
+    font-size: 20px;
+}
+
+#VIP{
+   background-color: #942c0d;
+   margin: 50px; /*to create space around/outside the element*/
+   padding: 20px; /*to create space inside the element. to target a specific side, specify bottom, left, right, or top*/ 
+   border-radius: 20px; /*to round the corners of the element since it naturally comes boxed*/ 
+
+}
+
+#VIP:hover{
+    background-color: #832407;
+}
+
+#VIP h3{
+    color: #f0a02e;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+#VIP button{ 
+    background-color: #f06b2e;
+    border-radius: 10px;
+}
+
+#VIP button:hover{ /*hovering effect is done separately*/
+    background-color: #f0a02e;
+    color: #000000;
+}
+
+#sidebysidediv{
+    display:flex  /* displays elements side by side */
+}
+
+.sub{
+    text-align: center;
+    background-color: #f0a02e;
+    margin-right: 35px; /*spacce between the elements/divs*/
+    margin-left: 35px;
+    padding: 20px;
+    border-radius: 20px; /*creates rounded corners*/
+    box-shadow:inset 0 0 10px #000000; /*creates a shadow effect inside the element*/
+
+}
+
+.sub:hover{
+    background-color: #f06b2e;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

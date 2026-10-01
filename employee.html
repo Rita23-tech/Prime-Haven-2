@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="Images/employee.png">
+    <title>Employee Information</title>
+
+    <!---this is an inline css below--->
+
+    <style>
+        h1{
+            color: coral;
+            text-align: center;
+        }
+
+        p{
+            font-weight: 600;
+        }
+
+        #table1, th, td{
+            border: 3px solid rgb(240, 66, 3);
+            border-collapse: collapse;
+            background-color: beige;
+        }
+
+        table{
+            width: 50%;
+            height: 120px;
+        }
+
+        td{
+            text-align: center;
+        }
+
+        #table2, th, td{
+            border: 3px solid rgb(240, 19, 19);
+            border-collapse: collapse;
+            background-color: beige;
+        }
+
+
+
+
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+    <h1>Employee Information</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloremque quod similique, nihil nam vel laudantium? Hic consequatur amet quo voluptates, iste, magni repellat beatae voluptate accusamus alias laudantium corrupti.
+    Veritatis repellendus quis tempora, dolor eum harum ipsa nobis cumque eligendi amet architecto, animi tempore. Consequatur non repudiandae laudantium accusamus ab tenetur sit repellendus, numquam quibusdam sed cupiditate quis necessitatibus.
+    A veritatis esse dicta necessitatibus culpa! Maiores ratione enim, explicabo assumenda a sit cumque eos corrupti, aliquid error saepe minus ex illo suscipit? Aspernatur fugit aperiam, ipsa distinctio laboriosam id?</p>
+
+    <table id="table1"> <!---id is used to identify a specific element in a page--->
+        <tr>
+            <caption>Employee Information</caption>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Founder Microsoft</td>
+            <td>$100000</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Steve Jobs</td>
+            <td>Founder google</td>
+            <td>$100000</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Mark Zuckerbag</td>
+            <td>Founder Meta</td>
+            <td>$100000</td>
+        </tr>
+
+    </table>
+
+<br><br><br>
+
+
+    <table id="table2">   <!---colspan is used to merge cells/coumns in a table--->
+
+        <tr>
+            <th colspan="4">Student Information</th>
+        </tr>
+
+        <tr>    
+            <th> <u> ID </u></th>
+            <th><u>Name</u></th>
+            <th><u>Subject</u></th>
+            <th><u>Marks</u></th>
+        </tr>
+
+        <tr>
+            <td rowspan="3">1</td>
+            <td rowspan="3">David</td>
+            <td>Maths</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td> 90 </td>
+        </tr>
+        <tr>
+            <td>Computer</td>
+            <td> 85 </td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">2</td>
+            <td rowspan="3">Alex</td>
+            <td>Maths</td>
+            <td> 80 </td>
+        </tr>
+         <tr>
+            <td>Physics</td>
+            <td> 70 </td>
+         </tr>
+         <tr>
+            <td>Computer</td>
+            <td> 90 </td>
+         </tr>
+
+
+
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

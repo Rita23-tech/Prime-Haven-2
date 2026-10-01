@@ -1,0 +1,722 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="Images/home2.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <title>PrimeHaven | Your Perfect Space</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            background-color: #f8f7f4;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION BAR */
+
+        nav {
+            width: 100%;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-family: "Playfair Display", serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #173b35;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #b88b4a;
+        }
+
+        .nav-button {
+            background-color: #173b35;
+            color: white !important;
+            padding: 11px 20px;
+            border-radius: 25px;
+        }
+
+        .nav-button:hover {
+            background-color: #b88b4a;
+        }
+
+
+        /* HERO SECTION */
+
+        .hero {
+            min-height: 620px;
+            display: flex;
+            align-items: center;
+            padding: 80px 7%;
+            background:
+                linear-gradient(
+                    rgba(15, 42, 37, 0.72),
+                    rgba(15, 42, 37, 0.72)
+                ),
+                url("Images/home2.png");
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero-content span {
+            color: #e2b76d;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .hero h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 60px;
+            line-height: 1.15;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 580px;
+            color: #eeeeee;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .primary-btn {
+            background-color: #c69a5b;
+            color: white;
+        }
+
+        .primary-btn:hover {
+            background-color: #a97d43;
+            transform: translateY(-2px);
+        }
+
+        .secondary-btn {
+            border: 1px solid white;
+            color: white;
+        }
+
+        .secondary-btn:hover {
+            background-color: white;
+            color: #173b35;
+        }
+
+
+        /* INTRODUCTION */
+
+        .intro {
+            padding: 90px 7%;
+            text-align: center;
+        }
+
+        .section-label {
+            color: #b88b4a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .intro h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 40px;
+            margin: 12px 0 18px;
+            color: #173b35;
+        }
+
+        .intro p {
+            max-width: 700px;
+            margin: auto;
+            color: #666;
+        }
+
+
+        /* CARDS */
+
+        .categories {
+            padding: 20px 7% 90px;
+        }
+
+        .categories-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 35px;
+        }
+
+        .categories-header h2 {
+            font-family: "Playfair Display", serif;
+            color: #173b35;
+            font-size: 36px;
+        }
+
+        .categories-header a {
+            color: #b88b4a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-content h3 {
+            color: #173b35;
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        .card-content p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .card-link {
+            color: #b88b4a;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+
+        /* CTA */
+
+        .cta {
+            margin: 20px 7% 90px;
+            padding: 70px 40px;
+            border-radius: 25px;
+            text-align: center;
+            background-color: #173b35;
+            color: white;
+        }
+
+        .cta h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #d9dfdc;
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background-color: #102d29;
+            color: white;
+            padding: 50px 7% 25px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand {
+            max-width: 350px;
+        }
+
+        .footer-brand h2 {
+            font-family: "Playfair Display", serif;
+            margin-bottom: 12px;
+        }
+
+        .footer-brand p {
+            color: #bfc9c5;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 60px;
+        }
+
+        .footer-links h4 {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            display: block;
+            text-decoration: none;
+            color: #bfc9c5;
+            margin-bottom: 8px;
+        }
+
+        .footer-links a:hover {
+            color: #e2b76d;
+        }
+
+        .copyright {
+            border-top: 1px solid #34504b;
+            padding-top: 20px;
+            text-align: center;
+            color: #9baaa6;
+            font-size: 14px;
+        }
+
+
+        /* RESPONSIVE DESIGN */
+
+        @media (max-width: 850px) {
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .card-container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 70px 5%;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .intro {
+                padding: 70px 5%;
+            }
+
+            .intro h2 {
+                font-size: 32px;
+            }
+
+            .categories {
+                padding: 20px 5% 70px;
+            }
+
+            .categories-header {
+                display: block;
+            }
+
+            .categories-header h2 {
+                margin-bottom: 10px;
+            }
+
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+
+            .cta {
+                margin: 20px 5% 70px;
+                padding: 50px 25px;
+            }
+
+            .cta h2 {
+                font-size: 30px;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 25px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="logo">
+            PrimeHaven
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+
+            <li>
+                <a href="location.html">Location</a>
+            </li>
+
+            <li>
+                <a href="location.html" class="nav-button">Contact Us</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span>Welcome to PrimeHaven</span>
+
+            <h1>
+                Discover a Space That Feels Like Home.
+            </h1>
+
+            <p>
+                Explore beautiful spaces, quality products and carefully
+                selected services designed to make your everyday life
+                better.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="gallery.html" class="btn primary-btn">
+                    Explore Gallery
+                </a>
+
+                <a href="services.html" class="btn secondary-btn">
+                    Our Services
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="intro">
+
+        <span class="section-label">
+            Why PrimeHaven
+        </span>
+
+        <h2>
+            Everything You Need, In One Place
+        </h2>
+
+        <p>
+            At PrimeHaven, we bring together quality, convenience and
+            style. Browse our collection, discover our services and
+            find something that perfectly fits your needs.
+        </p>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="categories">
+
+        <div class="categories-header">
+
+            <div>
+                <span class="section-label">
+                    Explore
+                </span>
+
+                <h2>
+                    Popular Categories
+                </h2>
+            </div>
+
+            <a href="gallery.html">
+                View All →
+            </a>
+
+        </div>
+
+
+        <div class="card-container">
+
+
+            <!-- CARD 1 -->
+
+            <div class="card">
+
+                <img
+                    src="Images/Car 3.avif"
+                    alt="Toys and Games"
+                >
+
+                <div class="card-content">
+
+                    <h3>
+                        Toys & Games
+                    </h3>
+
+                    <p>
+                        Discover fun and exciting products designed
+                        for entertainment and memorable moments.
+                    </p>
+
+                    <a href="gallery.html" class="card-link">
+                        Explore Collection →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="card">
+
+                <img
+                    src="Images/home2.png"
+                    alt="Kitchen Ware"
+                >
+
+                <div class="card-content">
+
+                    <h3>
+                        Kitchen Ware
+                    </h3>
+
+                    <p>
+                        Find practical and stylish kitchen essentials
+                        designed for modern living.
+                    </p>
+
+                    <a href="gallery.html" class="card-link">
+                        Explore Collection →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="card">
+
+                <img
+                    src="Images/home2.png"
+                    alt="Featured Products"
+                >
+
+                <div class="card-content">
+
+                    <h3>
+                        Featured Products
+                    </h3>
+
+                    <p>
+                        Take a look at some of our popular and
+                        carefully selected products.
+                    </p>
+
+                    <a href="gallery.html" class="card-link">
+                        View Products →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+
+    <section class="cta">
+
+        <h2>
+            Ready to Explore PrimeHaven?
+        </h2>
+
+        <p>
+            Take a look at our collection and discover products and
+            services made with you in mind.
+        </p>
+
+        <a href="gallery.html" class="btn primary-btn">
+            Start Exploring
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h2>
+                    PrimeHaven
+                </h2>
+
+                <p>
+                    Quality, convenience and style — all brought
+                    together in one place.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+
+                    <h4>Quick Links</h4>
+
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="services.html">Services</a>
+                    <a href="location.html">Location</a>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Connect</h4>
+
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Email Us</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 PrimeHaven. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```
